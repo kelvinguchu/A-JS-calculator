@@ -13,7 +13,7 @@ function clearInput() {
 
 // Function to remove the last character from the input box's text by using the slice() method
 function backspace() {
-	display.value = inputBox.value.slice(0, -1);
+	display.value = display.value.slice(0, -1);
 };
 
 /* Function to evaluate the input box's text as a mathematical expression and display the result
