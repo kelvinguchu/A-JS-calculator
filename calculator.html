@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+ <!--this is the main div that holds the calculator-->   
+<div id="div">
+    <div><input type="text" id="displayPanel"></div>
+    <!--make a table element and hold the buttons in the table rows by adding 3 table data elements-->
+    <table>
+        <tr>
+            <td><button onclick="addToDisplay('1')">1</button></td>
+            <td><button onclick="addToDisplay('2')">2</button></td>
+            <td><button onclick="addToDisplay('3')">3</button></td>
+            <td><button onclick="addToDisplay('+')">+</button></td>
+
+        </tr>
+        <tr>
+            <td><button onclick="addToDisplay('4')">4</button></td>
+            <td><button onclick="addToDisplay('5')">5</button></td>
+            <td><button onclick="addToDisplay('6')">6</button></td>
+            <td><button onclick="addToDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="addToDisplay('7')">7</button></td>
+            <td><button onclick="addToDisplay('8')">8</button></td>
+            <td><button onclick="addToDisplay('9')">9</button></td>
+            <td><button onclick="addToDisplay('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="addToDisplay('0')">0</button></td>
+            <td><button onclick="addToDisplay('.')">.</button></td>
+            <td><button onclick="addToDisplay('/')">/</button></td>
+            <td><button onclick="calculate()">=</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="backspace()">←</button></td>
+            <td><button onclick="clearInput()">Clear</button></td>
+        </tr>
+    </table>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
